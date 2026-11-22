@@ -1,5 +1,3 @@
-# Task 1 Prompts: EMI Explanation & Verification (Gemini AI)
-
 ## 1. Baseline Prompt
 ```text
 Explain EMI to a first-year BBA FinTech student in 50 words.
