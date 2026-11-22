@@ -1,0 +1,8 @@
+# Lab 1 Prompt & Evaluation Log (Ashnoor Kaur | 2620992549)
+
+| Task | Tool & Date | Exact Prompt (Summary) | Output Summary | Verification / Source | Error Found | Revised Prompt & What Improved |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Lab 1-T1** | Gemini AI, 18 Nov 2026 | Calculate EMI for ₹2,50,000 @ 14% for 24 months in a table. | Monthly EMI ₹12,008; Total ₹2,88,192. | Google Sheets formula `=250000*(14%/12)...` gave ₹12,003 / ₹2,88,077. | Rounded monthly rate `r` to `1.17%` (+₹115 error). | Added "use exact `r = 0.14/12`, round only final rupee figure" → exact match (₹12,003). |
+| **Lab 1-T2** | Gemini AI, 18 Nov 2026 | Zero-shot classify 8 customer complaints into 4 categories. | Classified all 8; guessed Payments for #7 and Loans for #8. | Manual pre-written answer key. | Guessed product for 2 vague complaints (6/8). | Added strict rule: mark `Needs review` if no product is named → 8/8 accuracy. |
+| **Lab 1-T3** | Gemini AI, 18 Nov 2026 | Summarise PaySetu passage in 3 bullets. | Mentioned volume growth, linked downtime to lower value, implied revenue rose. | Passage text + manual calc (₹26.88 cr & ₹30.09 cr). | 2 unsupported claims (cause & revenue). | Added "use only stated facts + list what cannot be concluded" → 0 unsupported claims. |
+| **Lab 1-T4** | Gemini AI, 18 Nov 2026 | Translate failed-payment notice into Hindi; draft 100-word bank email. | Hindi notice added "5–7 working days refund"; email used placeholders. | English back-translation & word count (96 words). | Invented refund timeline in Hindi translation. | Added "do not add any date, timeline, or promise" → exact faithful translation. |

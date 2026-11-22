@@ -1,0 +1,3 @@
+# Lab 1 Reflection — Ashnoor Kaur (2620992549)
+
+The prompt change that made the biggest difference across all four tasks was replacing vague instructions like "be accurate" or "do not invent" with explicit, itemized prohibitions. In my initial Gemini AI runs, the model rounded the monthly interest rate (shifting EMI by ₹5 per month), guessed categories for ambiguous complaints, implied revenue growth without supporting data, and inserted an unapproved 5–7 day refund timeline into the Hindi notice. Once I explicitly named each forbidden behaviour—no intermediate rounding, mandatory "Needs review" when no product is named, and zero invented timelines—errors dropped to zero. I learned that AI outputs are drafts requiring independent spreadsheet and logic checks.
