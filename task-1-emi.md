@@ -1,31 +1,28 @@
-# Task 1: EMI Explanation and Verification
+# Task 1: EMI Explanation and Verification — Prompts
 
 ## 1. Baseline Prompt
 Explain EMI to a first-year BBA FinTech student in 50 words.
 
-## 2. Improved Prompt (Version 1)
+## 2. Initial Improved Prompt
 Act as a loan officer at a fictional FinTech lender.
 A customer takes a personal loan of ₹2,50,000 at 14% annual interest for 24 months.
-
 Provide:
-1. The standard EMI formula with each variable defined.
+1. The EMI formula with each variable explained.
 2. Monthly EMI.
 3. Total repayment amount.
-4. Total interest payable.
+4. Total interest paid.
+Present the numerical results in a table.
 
-Present the numerical results in a two-column table: Metric | Amount (₹). Round currency values to the nearest rupee.
-
-## 3. Revised Prompt (Version 2 — Precision Control)
+## 3. Final Revised Prompt (Precision Fix)
 Act as a loan officer at a fictional FinTech lender.
 A customer takes a personal loan of ₹2,50,000 at 14% annual interest for 24 months.
-
-Calculate and present:
-1. The EMI formula with each variable defined.
+Provide:
+1. The EMI formula: EMI = P × r × (1 + r)^n / [(1 + r)^n − 1], with each variable defined.
 2. Monthly EMI.
 3. Total repayment amount.
-4. Total interest payable.
+4. Total interest paid.
 
 Rules:
 - Use the exact monthly interest rate r = 0.14 / 12 without intermediate rounding.
-- Round only the final rupee amounts to the nearest whole number.
-- Return the results in a table with columns: Metric | Amount (₹).
+- Round only the final rupee amounts to the nearest rupee.
+- Return the numbers in a Markdown table with two columns: Metric and Amount (₹).
