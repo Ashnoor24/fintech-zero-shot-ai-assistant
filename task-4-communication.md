@@ -1,31 +1,50 @@
-# Task 4 Prompts: Hindi Translation & Partner Bank Email (Gemini AI)
+# Task 4: Translation and Business Communication — Prompts
 
-## Part A: Hindi Translation (Revised Prompt)
-```text
-Translate the failed-payment notification below into clear, polite Hindi for PaySetu customers.
-Strict rules:
-- Translate only what is written.
-- Do NOT add any refund timeline, date, or promise not in the original.
-- Keep "PaySetu" and "₹2,500" unchanged.
-After the Hindi translation, provide an exact English back-translation so I can verify accuracy.
+## Part A: Hindi Translation & Back-Translation
 
-Notice:
+### 1. Initial Prompt
+Translate the following failed-payment notification into Hindi:
+
 Payment Failed
+
 Dear Customer,
+
 Your payment of ₹2,500 could not be completed due to a technical issue.
+
 Transaction Status: Failed
 Amount: ₹2,500
 Reason: Technical error
-If the amount has been deducted from your account, please contact customer support for assistance.
-Please check your transaction history before retrying the payment.
-PaySetu Support Team
-```
 
-## Part B: Partner Bank Settlement Email (Revised Prompt)
-```text
-Draft a professional email (maximum 100 words) from an Operations Executive at PaySetu to a partner bank's settlement team regarding a delayed settlement batch.
+If the amount has been deducted from your account, please contact customer support for assistance.
+
+Please check your transaction history before retrying the payment.
+
+PaySetu Support Team
+
+### 2. Revised Prompt (Strict Fidelity + Back-Translation)
+Translate the failed-payment notification below into clear, polite Hindi for PaySetu customers.
+
 Rules:
-- Use square-bracket placeholders for all sensitive or variable details: [Settlement_Batch_ID], [Transaction_Count], [Total_Amount], [Settlement_Date], and [Account_Reference].
-- Do NOT invent any real numbers, UTRs, or dates.
-- Request an updated settlement status and expected credit timeline.
-```
+- Translate strictly what is written in the original text.
+- Do NOT add any refund timeline, date, compensation offer, or promise that is not in the original.
+- Keep "PaySetu" and "₹2,500" unchanged.
+- After the Hindi translation, provide a literal English back-translation so I can verify accuracy.
+
+[Paste original notification text here]
+
+---
+
+## Part B: Partner Bank Escalation Email
+
+### 1. Initial Prompt
+Write an email from an operations executive to a partner bank about a delayed settlement.
+
+### 2. Revised Prompt (100-Word Limit + Mandatory Placeholders)
+Act as an Operations Executive at PaySetu (a fictional FinTech company).
+Draft a professional email to a partner bank regarding a delayed settlement.
+
+Rules:
+- Word count: Strictly around 100 words (95–105 words total).
+- Use [placeholders] for all IDs, amounts, dates, account numbers, and names. Never invent real or sample numbers.
+- Maintain a polite, concise, and action-oriented tone.
+- Ask for the current settlement status and an updated confirmation timeline.
