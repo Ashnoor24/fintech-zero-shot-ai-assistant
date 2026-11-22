@@ -1,8 +1,16 @@
-# Task 2 Prompts: Customer Complaint Classification (Gemini AI)
+# Task 2: Customer Complaint Classification — Prompts
 
-## 1. Initial Zero-Shot Prompt (v1)
-```text
+## 1. Initial Prompt (Single Complaint)
+Act as a FinTech complaint classification assistant.
+Classify the following customer complaint into exactly one category: Payments, Loans, or KYC/Account. If the category is unclear, label it Needs review.
+
+Customer complaint: "EMI deducted twice."
+
+Return a table with Complaint, Category, Reason, and Recommended Action. Do not provide any classification examples.
+
+## 2. Full Batch Zero-Shot Prompt (8 Complaints)
 Act as a FinTech customer complaint classification assistant.
+
 Classify each of the following 8 fictional customer complaints into exactly one category:
 - Payments: UPI, transfers, failed payments, refunds, or transaction issues.
 - Loans: EMI, loan repayment, interest, or loan-related deductions.
@@ -19,11 +27,16 @@ Customer Complaints:
 7. Money has disappeared from my account.
 8. My application was rejected without explanation.
 
-Assign exactly one category per complaint. Do not invent missing information. Mark ambiguous complaints as Needs review. Provide a short reason and one recommended action. Return a table: Complaint | Category | Reason | Recommended Action. Do not provide classification examples.
-```
+Instructions:
+1. Assign exactly one category per complaint.
+2. Do not invent missing information.
+3. Mark ambiguous complaints as Needs review.
+4. Provide a short reason for each classification.
+5. Suggest one recommended action.
 
-## 2. Revised Zero-Shot Prompt (v2 — Fixes Ambiguous Complaints #7 & #8)
-Added explicit constraint:
-```text
-Strict rule: If a complaint does not explicitly mention a specific product or channel (such as UPI, transfer, EMI, loan, PAN, or KYC), you MUST classify it as Needs review. Never guess or assume the product type.
-```
+Return a table with four columns: Complaint, Category, Reason, and Recommended Action.
+Do not provide classification examples before processing the complaints.
+
+## 3. Revised Prompt (Anti-Guessing Constraint Added)
+[Same as Batch Prompt above, with Instruction #3 strengthened to:]
+3. If a complaint does not explicitly mention a specific product or process (such as UPI, transfer, EMI, loan, PAN, or KYC), you MUST label it Needs review. Never assume or guess the product type.
